@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+
+  <title>食事問題改善アプリケーション</title>
+</head>
+<body>
+  <header>
+    <br>
+    
+  
+      <div class="searchbox">
+        <form name="form1">
+          <input type="text" name="search" value="" id="search"placeholder="料理名・食材" size="60"size="50"/>
+          <input type="button" onclick="check();" value="以上" />
+          <input type="button" onclick="check2();" value="以下" />
+          <input type="hidden" onclick="check4(50, 50);" value="check4" />
+        </form>
+      </div>
+
+      <br>
+
+
+      <hr>
+  </header>
+    <br>  <br>  <br>  <br>
+<div class="compare-box compare-box-separate">
+<div class="compare-left-wrap">
+<div class="compare-left-head">たんぱく質</div>
+<div class="compare-left">
+<ul class="list">
+<li>牛肉</li>
+<li>豚肉</li>
+<li>鶏肉</li>
+<li>さけ</li>
+<li>豆腐</li>
+<li>卵</li>
+</ul>
+</div>
+</div>
+
+<div class="compare-left-wrap">
+<div class="compare-left-head">脂質</div>
+<div class="compare-left">
+<ul class="list">
+<li>サラダ油</li>
+<li>オリーブオイル</li>
+<li>バター</li>
+<li>マヨネーズ</li>
+<li>ごま</li>
+<li>油揚げ</li>
+</ul>
+</div>
+</div>
+
+<div class="compare-left-wrap">
+<div class="compare-left-head">炭水化物</div>
+<div class="compare-left">
+<ul class="list">
+<li>じゃがいも</li>
+<li>米</li>
+<li>しらたき</li>
+<li>みりん</li>
+<li>パン粉</li>
+<li>餅</li>
+</ul>
+</div>
+</div>
+
+<div class="compare-left-wrap">
+<div class="compare-left-head">ビタミン</div>
+<div class="compare-left">
+<ul class="list">
+<li>白菜</li>
+<li>長ねぎ</li>
+<li>キャベツ</li>
+<li>ブロッコリー</li>
+<li>トマト</li>
+<li>しめじ</li>
+</ul>
+</div>
+</div>
+
+<div class="compare-right-wrap">
+<div class="compare-right-head">ミネラル</div>
+<div class="compare-right">
+<ul class="list">
+<li>水</li>
+<li>牛乳</li>
+<li>わかめ</li>
+<li>チーズ</li>
+<li>ほんだし</li>
+<li>塩</li>
+</ul>
+</div>
+</div>
+</div>
+
+<table id="order-table"></table>
+
+<script src="js.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+  html[Atributes-style]{
+    -webkit-locale:"ja";
+  }
+
+  body{
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 0px ;
+    background-color: white;
+  }
+
+  .foodname{
+  font-size:40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  display:block;
+  border: 0px none;
+  }
+
+  .foodkcal{
+    font-size: 35px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 10px;
+    display:block;
+    border: 0px none;
+  }
+
+  .fooditem{
+    background-color: #f4f4f4;
+    margin: auto;
+    padding: auto;
+    width: 530px;
+    text-align: left;
+    display:block;
+    border: 0px none;
+    font-weight: lighter;
+  }
+
+  .searchbox{
+    text-align: center;
+    display:block;
+    border: 0px none;
+  }
+
+  .foodimg{
+    text-align: center;
+    display:block;
+    border: 0px none;
+  }
+
+  img{
+    width: 530px;
+    height: auto;
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+
+  .tr{
+    font-family: serif;
+    border-radius:10px;
+    background-color: rgb(197, 193, 193);
+    margin: auto;
+    padding: auto;
+    width: 530px;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+  th{
+    color:white;
+    background-color:black;
+    font-family: serif;
+    text-decoration: none;
+    display:block;
+  }
+
+  .menu{
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+  }
+
+  
+  #order-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: white;
+  }
+  #order-table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  td {
+    font-size: 12px;
+    padding: .2em .5em;
+    border: solid 1px #ccc;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color:white;
+   }
+   .compare-box {
+     display:-webkit-box;/* 配置 */
+     display:-ms-flexbox;/* 配置 */
+     display:flex;/* 配置 */
+     max-width:500px;/* 横幅 */
+     max-height: 450px;
+     margin-left: auto ;/* 余白 */
+     margin-right: auto;
+     border-radius:4px;/* 角丸 */
+     box-shadow: 0 1px 3px rgba(0, 0, 0, .2); /* 影 */
+     background: white; /* 背景色 */
+   }
+   /* 左のボックス、右のボックス */
+   .compare-box .compare-left-wrap, .compare-box .compare-right-wrap{
+     width:50%;/* 横幅半分ずつ */
+     overflow:hidden;/* はみ出さないように*/
+   }
+   /* 左のタイトル、右のタイトル */
+   .compare-box .compare-left-head, .compare-box .compare-right-head{
+     background: black; /* 背景色 */
+     text-align: center;/* 中央寄せ */
+     color: #FFF; /* 文字色 */
+     font-weight: lighter;;/* 文字太さ */
+     padding:0em 1em;/* 余白 */
+     font-size:13px;/* 文字大きさ */
+     line-height:1.5;/* 行間 */
+     height:30px;/* 縦幅 */
+     display:table-cell;/* 形式 */
+     vertical-align:middle;/* 高さ中央寄せ */
+     width:800px;/* 横幅 */
+   }
+   /* 左のコンテンツ、右のコンテンツ */
+   .compare-box .compare-left, .compare-box .compare-right{
+     padding:2px;/* 余白 */
+     font-size:11px;/* 文字大きさ */
+     line-height:0.4;/* 行間 */
+     text-align: justify;/* 段落両端 */
+     text-justify: inter-ideograph;/* 段落両端 */
+     list-style: none;
+   }
+   /* 文章 */
+   .compare-box p {
+     padding: 0;/* 余白 */
+     margin: 0 0 5px 0;/* 余白 */
+     list-style: none;
+   }
+   /*スマホで見たとき*/
+   @media screen and (max-width: 480px){
+     /* 左のタイトル、右のタイトル */
+     .compare-box .compare-left-head, .compare-box .compare-right-head{
+       font-size:1px;/* 文字大きさ */
+       height:50px;/* 高さ */
+     }
+     /* 左のコンテンツ、右のコンテンツ */
+     .compare-box .compare-left, .compare-box .compare-right {
+         padding: 5px;/* 余白 */
+         font-size: 10px;/* 文字大きさ */
+         list-style: none;
+      }
+   }
+   /************************************
+   ** 比較表 箇条書き(記号)
+   ************************************/
+   /* 箇条書き(記号) */
+   .compare-box .list{
+      list-style: none !important;/* 行頭記号リセット */
+      padding:0 !important;/* 余白リセット */
+      margin:0 !important;/* 余白リセット */
+      border:none !important;/* 線リセット */
+   }
+   /* 箇条書き 行 */
+   .compare-box .list li {
+      border-bottom:1px dashed #cdcdcd;/* 線(太さ 種類　色) */
+      position: relative;/* 配置 */
+      margin:0.5em 0 !important;/* 余白 */
+      max-width:450px;/* 横幅 */
+      padding: 0 0 0.7em 1.4em !important;/* 余白 */
+      line-height:1.3;/* 行間 */
+   }
+   /* 箇条書き 行最後 */
+   .compare-box .list li:last-child{
+      border:none;
+   }
+   
+   /*スマホで見たとき*/
+   @media screen and (max-width: 480px){
+     /* 箇条書き 行頭記号 */
+     .compare-box .list li:before {
+       top: 4px;/* 上からの距離 */
+       left: 2px;/* 下からの距離 */
+       width:4px;/* 横幅 */
+       height:4px;/* 縦幅 */
+     }
+   }
+   /************************************
+   ** 比較表　箇条書き(番号)
+   ************************************/
+   /* 箇条書き(番号) */
+   .compare-box .list-number{
+      counter-reset:number; /* 番号リセット */
+      list-style: none !important;/* 行頭番号削除) */
+      padding:0 !important;/* 余白リセット */
+      margin:0 !important;/* 余白リセット */
+      border:none !important;/* 線リセット */
+   }
+   /* 箇条書き(番号) 行 */
+   .compare-box .list-number li {
+      position: relative;/* 配置 */
+      margin:0.5em 0 !important;/* 余白 */
+      max-width:500px; /* 横幅 */
+      padding: 0 0 0.5em 1.8em !important;/* 余白 */
+      line-height:1.8;/* 行間 */
+     border-bottom:1px dashed #cdcdcd;/* 線(太さ 種類　色) */
+   }
+   /* 箇条書き 行最後 */
+   .compare-box .list-number li:last-child{
+      border:none;
+   }
+   /* 箇条書き(番号) 行頭番号 */
+   .compare-box .list-number li:before {
+      counter-increment: number;/* 番号 */
+      content: counter(number);/* 番号 */
+      background-color: #fdc44f; /* 背景色 */
+      color: #fff; /* 番号色 */
+      position: absolute;/* 配置 */
+      font-weight:bold;/* 文字太さ */
+      font-size: 12px;/* 文字大きさ */
+      border-radius: 50%;/* 角丸 */
+      left: 0;/* 左からの距離 */
+      top:5px;/* 上からの距離 */
+      width: 15px;/* 横幅 */
+      height: 15px;/* 縦幅 */
+      line-height: 1px;/* 行間 */
+      text-align:center;/* 中央寄せ */
+   }
+   /* 箇条書き 行頭記号リセット */
+   .compare-box .list-number li:after{
+     content:'';
+   }
+   /*スマホで見た時*/
+   @media screen and (max-width: 480px){
+     /* 箇条書き(番号) 行 */
+     .compare-box .list-number li{
+        padding: 0 0 5px 8px !important;/* 余白 */
+     }
+     /* 箇条書き(番号) 行頭番号 */
+     .compare-box .list-number li:before {
+       font-size:6px;/* 文字大きさ */
+       width: 12px;/* 横幅 */
+       height: 12px;/* 縦幅 */
+       line-height: 12px;/* 行間 */
+       top:2px;/* 上からの距離 */
+     }
+   .list{
+       list-style: none;
+   }
+   ul{
+     list-style: none;
+   }
+  
